@@ -1,0 +1,27 @@
+[TYPECHECK]
+
+# List of members which are set dynamically and missed by Pylint inference
+# system, and so shouldn't trigger E1101 when accessed.
+generated-members=numpy.*, torch.*, cv2.*
+
+[MESSAGES CONTROL]
+
+# Enable the message, report, category or checker with the given id(s). You can
+# either give multiple identifier separated by comma (,) or put this option
+# multiple time.
+#enable=
+
+# Disable the message, report, category or checker with the given id(s). You
+# can either give multiple identifier separated by comma (,) or put this option
+# multiple time (only on the command line, not in the configuration file where
+# it should appear only once).
+disable=invalid-name,
+    arguments-differ,
+    missing-class-docstring,
+    missing-module-docstring,
+    missing-function-docstring,
+    line-too-long,
+    too-many-arguments,
+    dangerous-default-value,
+    redefined-builtin,
+    redefined-outer-name
